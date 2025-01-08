@@ -61,7 +61,7 @@ function sendPushNotification(title, body) {
 
 // 5. Programar notificaciones (ejemplo: todos los días a las 10:00)
 // Programación de notificaciones diarias a las 22:37
-schedule.scheduleJob('45 23 * * *', () => {
+schedule.scheduleJob('55 23 * * *', () => {
   console.log('Enviando notificaciones todos los días a las 23:15...');
   sendPushNotification(
     '¡Buenas noches!',
