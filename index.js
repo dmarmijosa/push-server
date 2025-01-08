@@ -70,7 +70,7 @@ schedule.scheduleJob('45 23 * * *', () => {
 });
 
 // 6. Iniciar servidor
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor de notificaciones escuchando en http://localhost:${PORT}`);
 });
